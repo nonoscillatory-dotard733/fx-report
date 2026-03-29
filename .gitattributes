@@ -1,0 +1,15 @@
+* text=auto eol=lf
+
+# Bash
+*.sh text eol=lf
+
+# Markdown & Plain text
+*.md text eol=lf
+*.txt text eol=lf
+
+# Python
+*.py text eol=lf
+
+# Git
+.gitignore text eol=lf
+.gitattributes text eol=lf

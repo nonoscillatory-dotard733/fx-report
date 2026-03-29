@@ -1,0 +1,48 @@
+# Copyright (c) 2026 s0llarr
+# Licensed under the MIT License.
+
+name: Publish weekend FX report
+
+on:
+  schedule:
+    - cron: "30 6 * * 0"
+  workflow_dispatch:
+
+concurrency:
+  group: fx-report-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install project
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Publish weekend report to history branch and main
+        env:
+          BASE: EUR
+          QUOTES: USD,GBP,CHF
+          DAYS: "5"
+          OUTPUT: output/fx_report.md
+          ERROR_OUTPUT: output/fx_report_error.md
+          HISTORY_BRANCH: report-history
+          MAIN_BRANCH: main
+          PUBLISH_MAIN: "true"
+          COMMIT_KIND: weekend-report
+        run: bash .github/scripts/publish_fx_report.sh
